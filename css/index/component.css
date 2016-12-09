@@ -19,7 +19,7 @@ body {
 }
 
 .demo-1 .large-header {
-	background-image: url('../img/demo-1-bg.jpg');
+	background-image: url('../../img/demo-1-bg.jpg');
 }
 
 .main-title {
@@ -41,6 +41,10 @@ body {
 }
 
 .main-title .thin {
+	font-weight: 500;
+}
+
+.main-title .thinner {
 	font-weight: 200;
 }
 

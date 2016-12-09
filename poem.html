@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js demo-4">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Love | Loss</title>
+		<link rel="shortcut icon" href="favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/poem/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/poem/bookblock.css" />
+		<link rel="stylesheet" type="text/css" href="css/poem/demo4.css" />
+		<script src="js/poem/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="bb-custom-wrapper">
+				
+				<div id="bb-bookblock" class="bb-bookblock">
+					<div class="bb-item">
+						<div class="bb-custom-firstpage">
+							
+						</div>
+						<div class="bb-custom-firstpage">
+                        <h1>Retrospect <span>By RUPERT BROOKE</span></h1>	
+							<nav class="codrops-nav">
+								<a class="codrops-icon codrops-icon-prev" href="main.html"><span>Return to home</span></a>
+							</nav>
+						</div>
+					</div>
+					<div class="bb-item">
+						<div class="bb-custom-side">
+							<p>
+                            In your arms was still delight,<br>
+							Quiet as a street at night;<br>
+                            And thoughts of you, I do remember,<br>
+                            Were green leaves in a darkened chamber,<br>
+                            Were dark clouds in a moonless sky.<br>
+                            Love, in you, went passing by,<br>
+                            Penetrative, remote, and rare,<br>
+                            Like a bird in the wide air,<br>
+                            And, as the bird, it left no trace<br>
+                            In the heaven of your face.<br>
+                            In your stupidity I found<br>
+                            The sweet hush after a sweet sound.<br>
+                            All about you was the light<br>
+                            That dims the greying end of night;<br>                            
+                            Desire was the unrisen sun,<br>
+                            Joy the day not yet begun,<br>
+                            With tree whispering to tree,<br>
+                            Without wind, quietly.<br>
+                            Wisdom slept within your hair,<br>
+                            And Long-Suffering was there,<br>
+                            </p>
+						</div>
+						<div class="bb-custom-side">
+							<p>
+                            And, in the flowing of your dress,<br>
+                            Undiscerning Tenderness.<br>
+                            And when you thought, it seemed to me,<br>
+                            Infinitely, and like a sea,<br>
+                            About the slight world you had known<br>
+                            Your vast unsconsciousness was thrown . . . <br>
+                            O haven without wave or tide!<br>
+                            Silence, in which all songs have died!<br>
+                            Holy book, where hearts are still!<br>
+                            And home at length under the hill!<br>
+                            O mother quiet, breasts of peace,<br>
+                            Where love itself would faint and cease!<br>
+                            O infinite deep I never knew,<br>
+                            I would come back, come back to you,<br>
+                            Find you, as a pool unstirred,<br>
+                            Kneel down by you, and never a word,<br>
+                            Lay my head, and nothing said,<br>
+                            In your hands, ungarlanded;<br>
+                            And a long watch you would keep;<br>
+                            And I should sleep, and I should sleep!
+                            </p>
+						</div>
+					</div>
+                    <div class="bb-item">
+						<div class="bb-custom-side">
+							<h1>Analysis</h1>
+						</div>
+
+						<div class="bb-custom-side">
+							<p>Croissant pudding gingerbread gummi bears marshmallow halvah. Wafer donut croissant. Cookie muffin jelly beans pie croissant croissant candy canes jelly marshmallow.</p>
+						</div>
+					</div>
+                    <div class="bb-item">
+						<div class="bb-custom-side">
+							<p>Croissant pudding gingerbread gummi bears marshmallow halvah. Wafer donut croissant. Cookie muffin jelly beans pie croissant croissant candy canes jelly marshmallow.</p>
+						</div>
+                    </div>
+				</div>
+
+				<nav>
+					<a id="bb-nav-first" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
+					<a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
+					<a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
+					<a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+				</nav>
+
+			</div>
+
+		</div><!-- /container -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/poem/jquerypp.custom.js"></script>
+		<script src="js/poem/jquery.bookblock.js"></script>
+		<script>
+			var Page = (function() {
+				
+				var config = {
+						$bookBlock : $( '#bb-bookblock' ),
+						$navNext : $( '#bb-nav-next' ),
+						$navPrev : $( '#bb-nav-prev' ),
+						$navFirst : $( '#bb-nav-first' ),
+						$navLast : $( '#bb-nav-last' )
+					},
+					init = function() {
+						config.$bookBlock.bookblock( {
+							speed : 1000,
+							shadowSides : 0.8,
+							shadowFlip : 0.4
+						} );
+						initEvents();
+					},
+					initEvents = function() {
+						
+						var $slides = config.$bookBlock.children();
+
+						// add navigation events
+						config.$navNext.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'next' );
+							return false;
+						} );
+
+						config.$navPrev.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'prev' );
+							return false;
+						} );
+
+						config.$navFirst.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'first' );
+							return false;
+						} );
+
+						config.$navLast.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'last' );
+							return false;
+						} );
+						
+						// add swipe events
+						$slides.on( {
+							'swipeleft' : function( event ) {
+								config.$bookBlock.bookblock( 'next' );
+								return false;
+							},
+							'swiperight' : function( event ) {
+								config.$bookBlock.bookblock( 'prev' );
+								return false;
+							}
+						} );
+
+						// add keyboard events
+						$( document ).keydown( function(e) {
+							var keyCode = e.keyCode || e.which,
+								arrow = {
+									left : 37,
+									up : 38,
+									right : 39,
+									down : 40
+								};
+
+							switch (keyCode) {
+								case arrow.left:
+									config.$bookBlock.bookblock( 'prev' );
+									break;
+								case arrow.right:
+									config.$bookBlock.bookblock( 'next' );
+									break;
+							}
+						} );
+					};
+
+					return { init : init };
+
+			})();
+		</script>
+		<script>
+				Page.init();
+		</script>
+	</body>
+</html>
