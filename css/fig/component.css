@@ -167,50 +167,52 @@
   background: url(../../img/urban-sprite-2.png) no-repeat -9999px -9999px;
 }
 
-
-
-
-
-
-
-
-
-
 /* FONT */
 
-
-
-
-
-
-
-
-
-
 .demo-3 .page-view h1 {
-  font-size: 100px !important;
+  font-size: 80px !important;
   letter-spacing: 4px;
-  text-shadow: 14px 0px rgba(1, 0, 0, 0.5);
+  text-shadow: 10px 0px rgba(1, 0, 0, 0.5);
 }
 
 .demo-3 .page-view .project:nth-child(1) {
-  background-image: url(../../img/urban-1.jpg);
+  background-image: url(../../img/g.jpg);
 }
 
 .demo-3 .page-view .project:nth-child(2) {
-  background-image: url(../../img/urban-2.jpg);
+  background-image: url(../../img/h.jpg);
 }
 
 .demo-3 .page-view .project:nth-child(3) {
-  background-image: url(../../img/urban-3.jpg);
+  background-image: url(../../img/i.jpg);
 }
 
 .demo-3 .page-view .project:nth-child(4) {
-  background-image: url(../../img/urban-4.jpg);
+  background-image: url(../../img/j.jpg);
 }
 
 .demo-3 .page-view .project:nth-child(5) {
-  background-image: url(../../img/urban-5.jpg);
+  background-image: url(../../img/k.jpg);
+}
+
+.demo-3 .page-view .project:nth-child(6) {
+  background-image: url(../../img/l.jpg);
+}
+
+.demo-3 .page-view .project:nth-child(7) {
+  background-image: url(../../img/m.jpg);
+}
+
+.demo-3 .page-view .project:nth-child(8) {
+  background-image: url(../../img/n.jpg);
+}
+
+.demo-3 .page-view .project:nth-child(9) {
+  background-image: url(../../img/o.jpg);
+}
+
+.demo-3 .page-view .project:nth-child(10) {
+  background-image: url(../../img/p.jpg);
 }
 
 .demo-3 .page-view .project:nth-child(odd).hide {
